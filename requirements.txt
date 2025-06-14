@@ -1,0 +1,6 @@
+PyQt6
+mss
+azure-ai-vision-imageanalysis
+azure-ai-translation-text
+azure-core
+Pillow
