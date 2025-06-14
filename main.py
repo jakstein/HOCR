@@ -247,7 +247,7 @@ class OverlayWindow(QWidget):
             response = self.translationClient.translate(
                 body=[{'text': japaneseText}],
                 to_language=['en'],
-                from_language=SOURCE_LANGUAGE # TODO: use autodetect for multi language support
+                from_language=SOURCE_LANGUAGE # auto-detect if empty
             )
             if response and response[0].translations:
                 return response[0].translations[0].text

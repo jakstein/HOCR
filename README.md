@@ -41,7 +41,7 @@ A simple desktop overlay app that captures text from your screen using Azure AI 
    AZURE_TRANSLATOR_ENDPOINT = "your-translator-endpoint"
    AZURE_TRANSLATOR_KEY = "your-translator-key"
    AZURE_TRANSLATOR_REGION = "your-region"
-   SOURCE_LANGUAGE = "source-language"  # e.g., "zh" for Chinese
+   SOURCE_LANGUAGE = "source-language"  # e.g., "zh" for Chinese | can leave empty for auto-detection
    ```
 
 ### Getting Azure Credentials
@@ -69,13 +69,11 @@ python main.py
 
 ## Current Limitations
 
-- Currently requires manual selection of source language
 - Minimum selection size is 50x50 pixels (Azure requirement)
 - Requires active internet connection for Azure services (and keys)
 
 ## Potential Improvements
 
-- [ ] Auto-detect source language instead of hardcoding Japanese
 - [ ] Support for multiple target languages (unlikely)
 - [ ] Offline OCR option
 - [ ] Offline translation option (unlikely)
@@ -94,7 +92,6 @@ python main.py
 ## Why "HOCR"?
 
 It just stands for "Hovering OCR".
-
 
 ## License
 
